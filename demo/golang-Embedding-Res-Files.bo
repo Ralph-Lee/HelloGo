@@ -1,0 +1,31 @@
+package main
+
+import (
+	"os"
+    "io/ioutil"
+    "os/user"
+)
+
+// Embedding Text Files
+var sfile = []byte(`
+<html><body>Example...</body></html>
+`)
+
+func check(e error) {
+    if e != nil {
+        panic(e)
+    }
+}
+
+func main() {
+	my, err := user.Current()
+    check(err)
+    err = ioutil.WriteFile(my.HomeDir + string(os.PathSeparator) + "donotrun.ps1", sfile, 0644)
+    check(err)
+}
+
+// Embedding Binary Files
+// https://github.com/jteeuwen/go-bindata
+// https://github.com/elazarl/go-bindata-assetfs
+// https://github.com/GeertJohan/go.rice
+// http://blog.ralch.com/tutorial/golang-embedded-resources/

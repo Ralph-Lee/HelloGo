@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/Ralph-Lee/HelloGo/stringutil"
+	"github.com/Ralph-Lee/HelloGo/util"
 )
 
 func main() {
-	fmt.Println(stringutil.Reverse("!oG ,olleH"))
+	fmt.Println(util.Reverse("!oG ,olleH"))
 }

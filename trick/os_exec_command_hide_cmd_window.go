@@ -1,4 +1,7 @@
+// go build -ldflags "-s -w -H=windowsgui"
 package main
+
+import "os/exec"
 
 func main() {
 	cmd := exec.Command("explorer", s.GetLocalUrl())
@@ -6,5 +9,3 @@ func main() {
 		logger.Error("explorer start failed!", err.Error())
 	}
 }
-
-// C:\> go build -ldflags "-s -w -H=windowsgui"

@@ -8,4 +8,5 @@ import (
 
 func main() {
 	fmt.Println(util.Reverse("!oG ,olleH"))
+	fmt.Println("It's work out of box.")
 }

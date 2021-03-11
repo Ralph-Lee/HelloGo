@@ -1,12 +1,7 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/Ralph-Lee/HelloGo/util"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(util.Reverse("!oG ,olleH"))
-	fmt.Println("It's work out of box.")
+	fmt.Println("Hello, world.")
 }

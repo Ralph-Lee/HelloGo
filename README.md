@@ -1,2 +1,2 @@
-# HelloMyGo
-Example of Google Go Language.
+## HelloGo
+Examples for Go.
